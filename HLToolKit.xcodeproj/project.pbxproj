@@ -13,6 +13,9 @@
 		665321CF1F04C0A200E4D50A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665321CD1F04C0A200E4D50A /* Main.storyboard */; };
 		665321D11F04C0A200E4D50A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665321D01F04C0A200E4D50A /* Assets.xcassets */; };
 		665321D41F04C0A200E4D50A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665321D21F04C0A200E4D50A /* LaunchScreen.storyboard */; };
+		665321F51F04D91200E4D50A /* NSDictionary+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F21F04D91200E4D50A /* NSDictionary+URLEncoding.m */; };
+		665321F61F04D91200E4D50A /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F41F04D91200E4D50A /* NSString+URLEncoding.m */; };
+		665321FA1F04EF9C00E4D50A /* NSDictionary+convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		665321D01F04C0A200E4D50A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665321D31F04C0A200E4D50A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665321D51F04C0A200E4D50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665321F01F04D91200E4D50A /* HLTKURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTKURLEncoding.h; sourceTree = "<group>"; };
+		665321F11F04D91200E4D50A /* NSDictionary+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URLEncoding.h"; sourceTree = "<group>"; };
+		665321F21F04D91200E4D50A /* NSDictionary+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URLEncoding.m"; sourceTree = "<group>"; };
+		665321F31F04D91200E4D50A /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		665321F41F04D91200E4D50A /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		665321F81F04EF9C00E4D50A /* NSDictionary+convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+convert.h"; sourceTree = "<group>"; };
+		665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+convert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +68,9 @@
 		665321C31F04C0A200E4D50A /* HLToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				665321C71F04C0A200E4D50A /* AppDelegate.h */,
-				665321C81F04C0A200E4D50A /* AppDelegate.m */,
-				665321CA1F04C0A200E4D50A /* ViewController.h */,
-				665321CB1F04C0A200E4D50A /* ViewController.m */,
-				665321CD1F04C0A200E4D50A /* Main.storyboard */,
-				665321D01F04C0A200E4D50A /* Assets.xcassets */,
-				665321D21F04C0A200E4D50A /* LaunchScreen.storyboard */,
-				665321D51F04C0A200E4D50A /* Info.plist */,
+				665321DE1F04C10500E4D50A /* HLCategory */,
+				665321DC1F04C0C900E4D50A /* AppDelegate */,
+				665321DB1F04C0C100E4D50A /* Source */,
 				665321C41F04C0A200E4D50A /* Supporting Files */,
 			);
 			path = HLToolKit;
@@ -77,6 +82,67 @@
 				665321C51F04C0A200E4D50A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		665321DB1F04C0C100E4D50A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				665321CD1F04C0A200E4D50A /* Main.storyboard */,
+				665321D01F04C0A200E4D50A /* Assets.xcassets */,
+				665321D21F04C0A200E4D50A /* LaunchScreen.storyboard */,
+				665321D51F04C0A200E4D50A /* Info.plist */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		665321DC1F04C0C900E4D50A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				665321C71F04C0A200E4D50A /* AppDelegate.h */,
+				665321C81F04C0A200E4D50A /* AppDelegate.m */,
+				665321CA1F04C0A200E4D50A /* ViewController.h */,
+				665321CB1F04C0A200E4D50A /* ViewController.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		665321DE1F04C10500E4D50A /* HLCategory */ = {
+			isa = PBXGroup;
+			children = (
+				665321F71F04EF8300E4D50A /* Convert */,
+				665321EE1F04D91200E4D50A /* HLTKNetwork */,
+			);
+			path = HLCategory;
+			sourceTree = "<group>";
+		};
+		665321EE1F04D91200E4D50A /* HLTKNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				665321EF1F04D91200E4D50A /* URLEncoding */,
+			);
+			path = HLTKNetwork;
+			sourceTree = "<group>";
+		};
+		665321EF1F04D91200E4D50A /* URLEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				665321F01F04D91200E4D50A /* HLTKURLEncoding.h */,
+				665321F11F04D91200E4D50A /* NSDictionary+URLEncoding.h */,
+				665321F21F04D91200E4D50A /* NSDictionary+URLEncoding.m */,
+				665321F31F04D91200E4D50A /* NSString+URLEncoding.h */,
+				665321F41F04D91200E4D50A /* NSString+URLEncoding.m */,
+			);
+			path = URLEncoding;
+			sourceTree = "<group>";
+		};
+		665321F71F04EF8300E4D50A /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				665321F81F04EF9C00E4D50A /* NSDictionary+convert.h */,
+				665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */,
+			);
+			name = Convert;
+			path = Foundation/Convert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665321F61F04D91200E4D50A /* NSString+URLEncoding.m in Sources */,
 				665321CC1F04C0A200E4D50A /* ViewController.m in Sources */,
+				665321F51F04D91200E4D50A /* NSDictionary+URLEncoding.m in Sources */,
 				665321C91F04C0A200E4D50A /* AppDelegate.m in Sources */,
+				665321FA1F04EF9C00E4D50A /* NSDictionary+convert.m in Sources */,
 				665321C61F04C0A200E4D50A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
