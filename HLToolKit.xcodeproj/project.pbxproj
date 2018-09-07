@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6612A1C21F31AF9800FA954A /* NSData+convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6612A1C11F31AF9800FA954A /* NSData+convert.m */; };
+		6650383B2139167100DCCF60 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6650383A2139167100DCCF60 /* UIView+CornerRadius.m */; };
 		665321C61F04C0A200E4D50A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321C51F04C0A200E4D50A /* main.m */; };
 		665321C91F04C0A200E4D50A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321C81F04C0A200E4D50A /* AppDelegate.m */; };
 		665321CC1F04C0A200E4D50A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321CB1F04C0A200E4D50A /* ViewController.m */; };
@@ -16,9 +18,14 @@
 		665321F51F04D91200E4D50A /* NSDictionary+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F21F04D91200E4D50A /* NSDictionary+URLEncoding.m */; };
 		665321F61F04D91200E4D50A /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F41F04D91200E4D50A /* NSString+URLEncoding.m */; };
 		665321FA1F04EF9C00E4D50A /* NSDictionary+convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */; };
+		665321FE1F04F1E400E4D50A /* NSDictionary+JSONValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 665321FD1F04F1E400E4D50A /* NSDictionary+JSONValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6612A1C01F31AF9800FA954A /* NSData+convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+convert.h"; sourceTree = "<group>"; };
+		6612A1C11F31AF9800FA954A /* NSData+convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+convert.m"; sourceTree = "<group>"; };
+		665038392139167100DCCF60 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		6650383A2139167100DCCF60 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		665321C11F04C0A200E4D50A /* HLToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665321C51F04C0A200E4D50A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		665321C71F04C0A200E4D50A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		665321F41F04D91200E4D50A /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		665321F81F04EF9C00E4D50A /* NSDictionary+convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+convert.h"; sourceTree = "<group>"; };
 		665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+convert.m"; sourceTree = "<group>"; };
+		665321FC1F04F1E400E4D50A /* NSDictionary+JSONValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONValue.h"; sourceTree = "<group>"; };
+		665321FD1F04F1E400E4D50A /* NSDictionary+JSONValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONValue.m"; sourceTree = "<group>"; };
+		66D95AD11F32CDC00031B097 /* NSString+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+Search.h"; path = "StringSearch/NSString+Search.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66503837213915F300DCCF60 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				665038382139160300DCCF60 /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		665038382139160300DCCF60 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				665038392139167100DCCF60 /* UIView+CornerRadius.h */,
+				6650383A2139167100DCCF60 /* UIView+CornerRadius.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		665321B81F04C0A200E4D50A = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +136,11 @@
 		665321DE1F04C10500E4D50A /* HLCategory */ = {
 			isa = PBXGroup;
 			children = (
+				66503837213915F300DCCF60 /* UIKit */,
+				665321FB1F04F10C00E4D50A /* JSONValue */,
 				665321F71F04EF8300E4D50A /* Convert */,
 				665321EE1F04D91200E4D50A /* HLTKNetwork */,
+				66D95AD11F32CDC00031B097 /* NSString+Search.h */,
 			);
 			path = HLCategory;
 			sourceTree = "<group>";
@@ -138,11 +168,23 @@
 		665321F71F04EF8300E4D50A /* Convert */ = {
 			isa = PBXGroup;
 			children = (
+				6612A1C01F31AF9800FA954A /* NSData+convert.h */,
+				6612A1C11F31AF9800FA954A /* NSData+convert.m */,
 				665321F81F04EF9C00E4D50A /* NSDictionary+convert.h */,
 				665321F91F04EF9C00E4D50A /* NSDictionary+convert.m */,
 			);
 			name = Convert;
 			path = Foundation/Convert;
+			sourceTree = "<group>";
+		};
+		665321FB1F04F10C00E4D50A /* JSONValue */ = {
+			isa = PBXGroup;
+			children = (
+				665321FC1F04F1E400E4D50A /* NSDictionary+JSONValue.h */,
+				665321FD1F04F1E400E4D50A /* NSDictionary+JSONValue.m */,
+			);
+			name = JSONValue;
+			path = Foundation/JSONValue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +261,12 @@
 			files = (
 				665321F61F04D91200E4D50A /* NSString+URLEncoding.m in Sources */,
 				665321CC1F04C0A200E4D50A /* ViewController.m in Sources */,
+				6612A1C21F31AF9800FA954A /* NSData+convert.m in Sources */,
 				665321F51F04D91200E4D50A /* NSDictionary+URLEncoding.m in Sources */,
+				665321FE1F04F1E400E4D50A /* NSDictionary+JSONValue.m in Sources */,
 				665321C91F04C0A200E4D50A /* AppDelegate.m in Sources */,
 				665321FA1F04EF9C00E4D50A /* NSDictionary+convert.m in Sources */,
+				6650383B2139167100DCCF60 /* UIView+CornerRadius.m in Sources */,
 				665321C61F04C0A200E4D50A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +426,7 @@
 				665321DA1F04C0A200E4D50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

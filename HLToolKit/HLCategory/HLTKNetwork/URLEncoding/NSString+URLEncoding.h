@@ -12,3 +12,7 @@
 - (NSString *)urlEncode;
 - (NSString *)urlDecode;
 @end
+
+@interface NSString (QueryString)
+- (NSDictionary *) queryDictionary;
+@end

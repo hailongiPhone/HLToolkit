@@ -24,3 +24,10 @@
     return [self stringByRemovingPercentEncoding];
 }
 @end
+
+@implementation NSString (QueryString)
+- (NSDictionary *) queryDictionary;
+{
+    return [NSDictionary dictionaryFromQueryString:self];
+}
+@end
