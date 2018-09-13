@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HLToolkit_Example' do
+  pod 'HLToolkit', :path => '../'
+
+  target 'HLToolkit_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end

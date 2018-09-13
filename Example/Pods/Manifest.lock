@@ -1,0 +1,23 @@
+PODS:
+  - HLToolkit (0.1.0)
+  - Kiwi (3.0.0)
+
+DEPENDENCIES:
+  - HLToolkit (from `../`)
+  - Kiwi
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kiwi
+
+EXTERNAL SOURCES:
+  HLToolkit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLToolkit: dc9be5ba02e719024c8ff76a84facd663fc1a94a
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+
+PODFILE CHECKSUM: eb43aa425c6818625294a1eb8c9cd67e435190fa
+
+COCOAPODS: 1.5.3

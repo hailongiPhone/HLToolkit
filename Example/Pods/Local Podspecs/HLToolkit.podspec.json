@@ -1,0 +1,22 @@
+{
+  "name": "HLToolkit",
+  "version": "0.1.0",
+  "summary": "A short description of HLToolkit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hailong/HLToolkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hailong": "ghl_hh@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/hailong/HLToolkit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HLToolkit/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module HLToolkit {
+  umbrella header "HLToolkit-umbrella.h"
+
+  export *
+  module * { export * }
+}
