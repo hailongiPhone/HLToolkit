@@ -10,13 +10,15 @@
 
 @interface UIApplication (HLToolkit)
 
-@property (nonatomic, readonly) NSString * applicationName;
-@property (nonatomic, readonly) NSString * applicationVersion;
-@property (nonatomic, readonly) NSString * applicationBuild;
+@property (nonatomic, readonly,class) NSString * applicationName;
+@property (nonatomic, readonly,class) NSString * applicationVersion;
+@property (nonatomic, readonly,class) NSString * applicationBuild;
 
 
-@property (nonatomic, readonly) NSURL * documentsDirectory;
-@property (nonatomic, readonly) NSURL * cachesDirectory;
-@property (nonatomic, readonly) NSURL * temporaryDirectory;
-@property (nonatomic, readonly) NSURL * libraryDirectory;
+@property (nonatomic, readonly,class) NSURL * documentsDirectory;
+@property (nonatomic, readonly,class) NSURL * cachesDirectory;
+@property (nonatomic, readonly,class) NSURL * temporaryDirectory;
+@property (nonatomic, readonly,class) NSURL * libraryDirectory;
+
++ (BOOL)isBackground;
 @end

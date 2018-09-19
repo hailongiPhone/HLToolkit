@@ -9,22 +9,22 @@
 #import "UIApplication+HLToolkit.h"
 
 @implementation UIApplication (HLToolkit)
-- (NSString *)applicationName
++ (NSString *)applicationName
 {
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"];
 }
 
-- (NSString *)applicationVersion
++ (NSString *)applicationVersion
 {
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
 }
 
-- (NSString *)applicationBuild
++ (NSString *)applicationBuild
 {
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
 }
 
-- (NSURL *)documentsDirectory
++ (NSURL *)documentsDirectory
 {
     NSError * error;
     NSURL * url = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
@@ -38,7 +38,7 @@
     return url;
 }
 
-- (NSURL *)cachesDirectory
++ (NSURL *)cachesDirectory
 {
     NSError * error;
     NSURL * url = [[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory
@@ -53,13 +53,13 @@
     return url;
 }
 
-- (NSURL *)temporaryDirectory
++ (NSURL *)temporaryDirectory
 {
     return [NSURL fileURLWithPath:NSTemporaryDirectory()
                       isDirectory:YES];
 }
 
-- (NSURL *)libraryDirectory
++ (NSURL *)libraryDirectory
 {
     NSError * error;
     NSURL * url = [[NSFileManager defaultManager] URLForDirectory:NSLibraryDirectory
@@ -71,5 +71,11 @@
     {
     }
     return url;
+}
+
+#pragma mark -
++ (BOOL)isBackground;
+{
+    return [UIApplication sharedApplication].applicationState == UIApplicationStateBackground;
 }
 @end

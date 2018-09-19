@@ -23,13 +23,14 @@ static NSUInteger random_below(NSUInteger n) {
     return ret;
 }
 @implementation NSMutableArray (HLToolkit)
-- (void)shuffle;
+- (NSMutableArray *)shuffle;
 {
     // http://en.wikipedia.org/wiki/Knuth_shuffle
     for(NSUInteger i = [self count]; i > 1; i--) {
         NSUInteger j = random_below(i);
         [self exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
     }
+    return self;
 }
 
 - (NSMutableArray *) removeFirstObject

@@ -10,7 +10,7 @@
 
 @interface NSMutableArray (HLToolkit)
 // Unbiased random rounding thingy.
-- (void) shuffle;
+- (NSMutableArray *) shuffle;
 
 - (NSMutableArray *) removeFirstObject;
 - (NSMutableArray *) reverse;

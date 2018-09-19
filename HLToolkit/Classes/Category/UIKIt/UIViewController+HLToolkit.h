@@ -11,4 +11,5 @@
 @interface UIViewController (HLToolkit)
 - (id)currentVisibleViewController;
 - (BOOL)isViewVisible;
+
 @end
