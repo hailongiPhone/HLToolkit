@@ -10,6 +10,7 @@
 
 @interface UIColor (HLToolkit)
 + (UIColor *)randomColor;
-+ (UIColor *)colorWithRGBHex:(UInt32)hex;
++ (UIColor *)colorWithHex:(UInt32)hex;
++ (UIColor *)colorWithAHex:(UInt32)hex;
 + (UIColor *)colorWithHexString:(NSString *)stringToConvert;
 @end

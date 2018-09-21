@@ -103,6 +103,8 @@
 		66B2ACB6214283C800263F93 /* HLTKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2ACAA2142701400263F93 /* HLTKBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66B2ACB7214283CF00263F93 /* HLTKInspectableDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2ACAB2142709B00263F93 /* HLTKInspectableDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66B2ACB8214283D400263F93 /* HLTKMacors.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2ACA921426FC300263F93 /* HLTKMacors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66C4BD0B21534CAA00A62C58 /* UIButton+HLToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C4BD0921534CAA00A62C58 /* UIButton+HLToolkit.h */; };
+		66C4BD0C21534CAA00A62C58 /* UIButton+HLToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C4BD0A21534CAA00A62C58 /* UIButton+HLToolkit.m */; };
 		6805DD8FEB589CAE9E7EC0B683BA0685 /* KWGenericMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B3CEDC248E6312DBC903DE894A426A /* KWGenericMatcher.m */; };
 		6A177E053CFE94820162705BDEFA836C /* KWLet.h in Headers */ = {isa = PBXBuildFile; fileRef = E26F5804CA0270D5E177BD9D310655F0 /* KWLet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BEBCB23D36F040936BCCA321C279937 /* NSDictionary+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D62D757401C656E3556756EAA64D8 /* NSDictionary+URLEncoding.m */; };
@@ -413,6 +415,8 @@
 		66B2ACAC214270CC00263F93 /* HLTKFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLTKFunction.h; sourceTree = "<group>"; };
 		66B2ACAD214276D500263F93 /* NSFileManager+NotBackupNotPurged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+NotBackupNotPurged.h"; sourceTree = "<group>"; };
 		66B2ACAE214276D600263F93 /* NSFileManager+NotBackupNotPurged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+NotBackupNotPurged.m"; sourceTree = "<group>"; };
+		66C4BD0921534CAA00A62C58 /* UIButton+HLToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HLToolkit.h"; sourceTree = "<group>"; };
+		66C4BD0A21534CAA00A62C58 /* UIButton+HLToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HLToolkit.m"; sourceTree = "<group>"; };
 		691C48697E962DA79B44A61D3BB0BC37 /* KWValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWValue.h; path = Classes/Core/KWValue.h; sourceTree = "<group>"; };
 		69B3CEDC248E6312DBC903DE894A426A /* KWGenericMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWGenericMatcher.m; path = Classes/Matchers/KWGenericMatcher.m; sourceTree = "<group>"; };
 		6AFFB6FDF9A88A6CC688B30B382ECA41 /* KWRespondToSelectorMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWRespondToSelectorMatcher.h; path = Classes/Matchers/KWRespondToSelectorMatcher.h; sourceTree = "<group>"; };
@@ -915,6 +919,8 @@
 				1B87938357B3E2E9A2B9DCFA164276B6 /* UIView+HLToolkit.m */,
 				90F4C83773072B8C85D4960EB561CDE5 /* UIViewController+HLToolkit.h */,
 				1C8A4B4349DC36E4D09A9E947D2CA0C9 /* UIViewController+HLToolkit.m */,
+				66C4BD0921534CAA00A62C58 /* UIButton+HLToolkit.h */,
+				66C4BD0A21534CAA00A62C58 /* UIButton+HLToolkit.m */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -1115,6 +1121,7 @@
 				082E7F855904A60910E7F0F560826F15 /* UIColor+HLToolkit.h in Headers */,
 				05C0D6FD5ADDAFBD6B66D4DBA2225833 /* UIDevice+HLToolkit.h in Headers */,
 				B180FF79C60E0B53E86868BF9FD2B4BF /* UIImage+HLToolkit.h in Headers */,
+				66C4BD0B21534CAA00A62C58 /* UIButton+HLToolkit.h in Headers */,
 				738440420204FBF1C8D4F8AB90A0192D /* UIScrollView+HLToolkit.h in Headers */,
 				955AF8CFD78862AFDFDCFC96AD7223DD /* UIView+CornerRadius.h in Headers */,
 				66B2ACB7214283CF00263F93 /* HLTKInspectableDesignable.h in Headers */,
@@ -1471,6 +1478,7 @@
 				F62005EB6F9E0E52C16AF14609DDCDBD /* NSData+convert.m in Sources */,
 				E967EE9CAEFE2E64023848406FCAF512 /* NSDate+HLToolkit.m in Sources */,
 				1EFEDCA087C5CBDA340DB5B7654A636C /* NSDictionary+convert.m in Sources */,
+				66C4BD0C21534CAA00A62C58 /* UIButton+HLToolkit.m in Sources */,
 				4364DDCD1A0F9CE34CE0BA09F09BA792 /* NSDictionary+HLToolkit.m in Sources */,
 				D403F23E165F18440C3F60E6A5F6ECDC /* NSDictionary+JSONValue.m in Sources */,
 				6BEBCB23D36F040936BCCA321C279937 /* NSDictionary+URLEncoding.m in Sources */,

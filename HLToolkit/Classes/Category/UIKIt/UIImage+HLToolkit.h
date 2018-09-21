@@ -68,4 +68,8 @@
 + (UIImage *) templateModeImageNamed:(NSString *)imageName;
 - (UIColor *) mostColorScale:(float)scale;
 
+
+//从颜色生成图片  默认size 1，1，用于平铺展示
++ (UIImage *)imageFromColor:(nullable UIColor *)color;
+
 @end

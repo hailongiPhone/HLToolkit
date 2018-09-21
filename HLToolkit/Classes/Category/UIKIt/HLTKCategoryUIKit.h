@@ -12,3 +12,4 @@
 #import "UIScrollView+HLToolkit.h"
 #import "UIView+HLToolkit.h"
 #import "UIViewController+HLToolkit.h"
+#import "UIButton+HLToolkit.h"
