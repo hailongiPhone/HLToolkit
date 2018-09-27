@@ -12,4 +12,9 @@
 - (id)currentVisibleViewController;
 - (BOOL)isViewVisible;
 
+- (void)closeWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
+- (void)backWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
+- (IBAction)onTapClose:(id)sender;
+- (IBAction)onTapBack:(id)sender;
+
 @end

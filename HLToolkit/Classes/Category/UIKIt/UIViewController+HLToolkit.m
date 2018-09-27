@@ -25,4 +25,42 @@
     return [self isViewLoaded] && self.view.window != nil;
 }
 
+
+- (void)closeWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
+{
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:animated completion:completion];
+    }else if ([[self.navigationController viewControllers] count] > 1){
+        [self.navigationController popViewControllerAnimated:animated];
+        if (completion) {
+            completion();
+        }
+    }
+}
+
+- (void)backWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
+{
+    if ([[self.navigationController viewControllers] count] > 1){
+        [self dismissViewControllerAnimated:animated completion:completion];
+    }else if (self.presentingViewController) {
+        [self.navigationController popViewControllerAnimated:animated];
+        if (completion) {
+            completion();
+        }
+    }
+}
+
+
+- (IBAction)onTapClose:(id)sender;
+{
+    [self closeWithAnimated:YES
+                completion:NULL];
+}
+
+- (IBAction)onTapBack:(id)sender;
+{
+    [self backWithAnimated:YES
+                completion:NULL];
+}
+
 @end

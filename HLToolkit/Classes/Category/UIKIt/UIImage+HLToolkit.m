@@ -7,6 +7,8 @@
 //
 
 #import "UIImage+HLToolkit.h"
+@import ImageIO;
+@import MobileCoreServices;
 
 @implementation UIImage (HLToolkit)
 #pragma mark - Crop
@@ -130,22 +132,19 @@
 
 #pragma mark - Save/load from Disk
 
-- (NSURL *)writeToFile:(NSString *)path
+- (NSURL *)writeToFile:(NSString *)filePath
 {
-    // Success?
-    NSError * error;
-    if ([UIImageJPEGRepresentation(self, 0.8) writeToFile:path
-                                                  options:NSDataWritingAtomic
-                                                    error:&error])
-    {
-        NSURL * url = [NSURL fileURLWithPath:path];
-        return url;
-    }
-    // Failure
-    else
-    {
+    NSURL * url = [NSURL fileURLWithPath:filePath];
+    CGImageDestinationRef destination = CGImageDestinationCreateWithURL((__bridge CFURLRef)url, kUTTypePNG, 1, NULL);
+    if (!destination) {
         return nil;
     }
+
+    CGImageDestinationAddImage(destination, self.CGImage, nil);
+    CGImageDestinationFinalize(destination);
+    CFRelease(destination);
+    
+    return url;
 }
 
 - (NSURL *)writeToTemporaryDirectory
