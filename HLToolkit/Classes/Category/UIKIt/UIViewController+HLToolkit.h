@@ -17,4 +17,5 @@
 - (IBAction)onTapClose:(id)sender;
 - (IBAction)onTapBack:(id)sender;
 
+- (UIViewController *)topmostViewControlle;
 @end

@@ -25,6 +25,7 @@
     return [self isViewLoaded] && self.view.window != nil;
 }
 
+#pragma mark -
 
 - (void)closeWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
 {
@@ -41,9 +42,9 @@
 - (void)backWithAnimated:(BOOL)animated completion: (void (^ __nullable)(void))completion;
 {
     if ([[self.navigationController viewControllers] count] > 1){
-        [self dismissViewControllerAnimated:animated completion:completion];
-    }else if (self.presentingViewController) {
         [self.navigationController popViewControllerAnimated:animated];
+    }else if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:animated completion:completion];
         if (completion) {
             completion();
         }
@@ -61,6 +62,26 @@
 {
     [self backWithAnimated:YES
                 completion:NULL];
+}
+
+#pragma mark - 
+- (UIViewController *)topmostViewControlle;
+{
+    if (self.presentedViewController) {
+        return [self.presentedViewController topmostViewControlle];
+    }
+    
+    if ([self isKindOfClass:[UITabBarController class]]) {
+        UITabBarController * tabbarVC =(UITabBarController *)self;
+        return [tabbarVC.selectedViewController topmostViewControlle];
+    }
+    
+    if ([self isKindOfClass:[UINavigationController class]]) {
+        UINavigationController * navVC =(UINavigationController *)self;
+        return [navVC.visibleViewController topmostViewControlle];
+    }
+    
+    return self;
 }
 
 @end
