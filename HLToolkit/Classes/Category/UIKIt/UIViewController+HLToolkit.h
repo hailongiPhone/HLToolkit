@@ -17,5 +17,9 @@
 - (IBAction)onTapClose:(id)sender;
 - (IBAction)onTapBack:(id)sender;
 
+- (IBAction)pushViewController:(UIViewController *)destinationViewController
+                hidesBottomBar:(BOOL)hides
+                      animated:(BOOL)animated;
+
 - (UIViewController *)topmostViewControlle;
 @end

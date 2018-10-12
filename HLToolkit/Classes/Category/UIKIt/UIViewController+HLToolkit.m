@@ -64,6 +64,17 @@
                 completion:NULL];
 }
 
+- (IBAction)pushViewController:(UIViewController *)destinationViewController
+                hidesBottomBar:(BOOL)hides
+                      animated:(BOOL)animated;
+{
+    BOOL current = self.hidesBottomBarWhenPushed;
+    destinationViewController.hidesBottomBarWhenPushed = hides;
+    self.hidesBottomBarWhenPushed = hides; // hide the tabBar when pushing B
+    [self.navigationController pushViewController:destinationViewController animated:YES];
+    self.hidesBottomBarWhenPushed = current; // for comeback to self
+}
+
 #pragma mark - 
 - (UIViewController *)topmostViewControlle;
 {
