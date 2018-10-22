@@ -11,6 +11,8 @@
 #include <mach/mach.h>
 #include <ifaddrs.h>
 #include <arpa/inet.h>
+#include <sys/types.h>
+
 
 @implementation UIDevice (HLToolkit)
 // http://blog.zachwaugh.com/post/309927273/programmatically-retrieving-ip-address-of-iphone
@@ -64,5 +66,53 @@
 {
     [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
     [UIViewController attemptRotationToDeviceOrientation];
+}
+
+
+#pragma MARK -
++ (NSInteger)iOSVersion {
+    return [[[UIDevice currentDevice] systemVersion] integerValue];
+}
+
++ (NSUInteger)getSysInfo:(uint)typeSpecifier {
+    size_t size = sizeof(int);
+    int results;
+    int mib[2] = {CTL_HW, typeSpecifier};
+    sysctl(mib, 2, &results, &size, NULL, 0);
+    return (NSUInteger) results;
+}
+
++ (NSUInteger)cpuFrequency {
+    return [self getSysInfo:HW_CPU_FREQ];
+}
+
++ (NSUInteger)busFrequency {
+    return [self getSysInfo:HW_TB_FREQ];
+}
+
++ (NSUInteger)ramSize {
+    return [self getSysInfo:HW_MEMSIZE];
+}
+
++ (NSUInteger)cpuNumber {
+    return [self getSysInfo:HW_NCPU];
+}
+
++ (NSUInteger)totalMemory {
+    return [self getSysInfo:HW_PHYSMEM];
+}
+
++ (NSUInteger)userMemory {
+    return [self getSysInfo:HW_USERMEM];
+}
+
++ (NSNumber * _Nonnull)totalDiskSpace {
+    NSDictionary *attributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+    return [attributes objectForKey:NSFileSystemSize];
+}
+
++ (NSNumber * _Nonnull)freeDiskSpace {
+    NSDictionary *attributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+    return [attributes objectForKey:NSFileSystemFreeSize];
 }
 @end

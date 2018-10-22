@@ -7,3 +7,4 @@
 
 #import "NSData+convert.h"
 #import "NSDictionary+convert.h"
+#import "NSString+convert.h"

@@ -21,4 +21,6 @@
 @property (nonatomic, readonly,class) NSURL * libraryDirectory;
 
 + (BOOL)isBackground;
++ (void)launchCount:(void (^)(NSInteger totalCount,NSInteger currentVersionCount)) handler;
+
 @end

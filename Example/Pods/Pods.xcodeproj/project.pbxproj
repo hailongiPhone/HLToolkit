@@ -216,6 +216,22 @@
 		D403F23E165F18440C3F60E6A5F6ECDC /* NSDictionary+JSONValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3689D58196BAA96EAD63051FB741CC /* NSDictionary+JSONValue.m */; };
 		D6120AC72B19EDBA76DF08B445BCDF0E /* KWInvocationCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E41B0C77069DA3A7658675181D0437 /* KWInvocationCapturer.m */; };
 		D6E2C3C07B9C62974074FCA0A1169A5B /* KWMatchVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2296EABC53237281F20069C0941767EB /* KWMatchVerifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9080A072178DED300246DE2 /* NSUserDefaults+HLToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A052178DED300246DE2 /* NSUserDefaults+HLToolkit.h */; };
+		D9080A082178DED300246DE2 /* NSUserDefaults+HLToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A062178DED300246DE2 /* NSUserDefaults+HLToolkit.m */; };
+		D9080A0C2178E9B000246DE2 /* NSString+HLTKCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A0A2178E9B000246DE2 /* NSString+HLTKCryptor.h */; };
+		D9080A0D2178E9B000246DE2 /* NSString+HLTKCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A0B2178E9B000246DE2 /* NSString+HLTKCryptor.m */; };
+		D9080A102178F23300246DE2 /* NSData+HLTKCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A0E2178F23300246DE2 /* NSData+HLTKCryptor.h */; };
+		D9080A112178F23300246DE2 /* NSData+HLTKCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A0F2178F23300246DE2 /* NSData+HLTKCryptor.m */; };
+		D9080A142178F45F00246DE2 /* NSString+HLToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A122178F45F00246DE2 /* NSString+HLToolkit.h */; };
+		D9080A152178F45F00246DE2 /* NSString+HLToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A132178F45F00246DE2 /* NSString+HLToolkit.m */; };
+		D9080A182178F57C00246DE2 /* NSString+convert.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A162178F57C00246DE2 /* NSString+convert.h */; };
+		D9080A192178F57C00246DE2 /* NSString+convert.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A172178F57C00246DE2 /* NSString+convert.m */; };
+		D9080A1D2178F70400246DE2 /* HLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A1B2178F70400246DE2 /* HLLog.h */; };
+		D9080A1E2178F70400246DE2 /* HLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A1C2178F70400246DE2 /* HLLog.m */; };
+		D9080A212178FB4A00246DE2 /* NSObject+HLToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A1F2178FB4A00246DE2 /* NSObject+HLToolkit.h */; };
+		D9080A222178FB4A00246DE2 /* NSObject+HLToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A202178FB4A00246DE2 /* NSObject+HLToolkit.m */; };
+		D9080A262178FBD300246DE2 /* NSThread+HLToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = D9080A242178FBD300246DE2 /* NSThread+HLToolkit.h */; };
+		D9080A272178FBD300246DE2 /* NSThread+HLToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9080A252178FBD300246DE2 /* NSThread+HLToolkit.m */; };
 		D9FAF572C013C1F957FB56E2B12BD9CA /* KWInvocationCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = A69B4895CF1F2C4895181F2765231E69 /* KWInvocationCapturer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC698C0A7CD737F76544375B381AB5D /* KWExampleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAA3DD97A78B40A2B3D63426E974A89 /* KWExampleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB31C93F13EC1923DBF01F5024EBFFDD /* KWInequalityMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82295815E6A375ECC5FF88B68B7195DB /* KWInequalityMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -536,6 +552,22 @@
 		D67A8C5CBECB2E32786833FE11F914FE /* NSInvocation+KiwiAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+KiwiAdditions.m"; path = "Classes/Core/NSInvocation+KiwiAdditions.m"; sourceTree = "<group>"; };
 		D695C186FB90432ADB08FE1703889E56 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Classes/Core/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
 		D7E2FF31B9CE40ECB44B407C23CD6D6E /* KWMock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMock.m; path = Classes/Mocking/KWMock.m; sourceTree = "<group>"; };
+		D9080A052178DED300246DE2 /* NSUserDefaults+HLToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+HLToolkit.h"; sourceTree = "<group>"; };
+		D9080A062178DED300246DE2 /* NSUserDefaults+HLToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+HLToolkit.m"; sourceTree = "<group>"; };
+		D9080A0A2178E9B000246DE2 /* NSString+HLTKCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HLTKCryptor.h"; sourceTree = "<group>"; };
+		D9080A0B2178E9B000246DE2 /* NSString+HLTKCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HLTKCryptor.m"; sourceTree = "<group>"; };
+		D9080A0E2178F23300246DE2 /* NSData+HLTKCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HLTKCryptor.h"; sourceTree = "<group>"; };
+		D9080A0F2178F23300246DE2 /* NSData+HLTKCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HLTKCryptor.m"; sourceTree = "<group>"; };
+		D9080A122178F45F00246DE2 /* NSString+HLToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HLToolkit.h"; sourceTree = "<group>"; };
+		D9080A132178F45F00246DE2 /* NSString+HLToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HLToolkit.m"; sourceTree = "<group>"; };
+		D9080A162178F57C00246DE2 /* NSString+convert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+convert.h"; sourceTree = "<group>"; };
+		D9080A172178F57C00246DE2 /* NSString+convert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+convert.m"; sourceTree = "<group>"; };
+		D9080A1B2178F70400246DE2 /* HLLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLog.h; sourceTree = "<group>"; };
+		D9080A1C2178F70400246DE2 /* HLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLog.m; sourceTree = "<group>"; };
+		D9080A1F2178FB4A00246DE2 /* NSObject+HLToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HLToolkit.h"; sourceTree = "<group>"; };
+		D9080A202178FB4A00246DE2 /* NSObject+HLToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HLToolkit.m"; sourceTree = "<group>"; };
+		D9080A242178FBD300246DE2 /* NSThread+HLToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSThread+HLToolkit.h"; sourceTree = "<group>"; };
+		D9080A252178FBD300246DE2 /* NSThread+HLToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSThread+HLToolkit.m"; sourceTree = "<group>"; };
 		DBFD351D46DCD0055057EC9DAFE42BB5 /* KWMessagePattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMessagePattern.m; path = Classes/Core/KWMessagePattern.m; sourceTree = "<group>"; };
 		DC76BC82943659A263E5D692A5B1C243 /* KWExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExample.h; path = Classes/Core/KWExample.h; sourceTree = "<group>"; };
 		DCA7FA726BEB94F46AAEF5E77EEC9343 /* UIScrollView+HLToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HLToolkit.h"; sourceTree = "<group>"; };
@@ -630,11 +662,13 @@
 		1AB203ACE3C65239A052FF4D74F51D41 /* Convert */ = {
 			isa = PBXGroup;
 			children = (
+				66B2ACA721426F3A00263F93 /* HLTKConvert.h */,
 				6E7FC3E00D4D37859648EF54D1BAB816 /* NSData+convert.h */,
 				E5A8D99E5FE96960F4B61D19CC598264 /* NSData+convert.m */,
 				7B6C833A180E93F1498E28544A5287C6 /* NSDictionary+convert.h */,
 				BA9D3D6F040D4935640AD9A71143E2B4 /* NSDictionary+convert.m */,
-				66B2ACA721426F3A00263F93 /* HLTKConvert.h */,
+				D9080A162178F57C00246DE2 /* NSString+convert.h */,
+				D9080A172178F57C00246DE2 /* NSString+convert.m */,
 			);
 			path = Convert;
 			sourceTree = "<group>";
@@ -1066,6 +1100,14 @@
 				33B670811CBC57F685E09E2D827772A4 /* NSMutableDictionary+HLToolkit.m */,
 				66B2ACAD214276D500263F93 /* NSFileManager+NotBackupNotPurged.h */,
 				66B2ACAE214276D600263F93 /* NSFileManager+NotBackupNotPurged.m */,
+				D9080A052178DED300246DE2 /* NSUserDefaults+HLToolkit.h */,
+				D9080A062178DED300246DE2 /* NSUserDefaults+HLToolkit.m */,
+				D9080A122178F45F00246DE2 /* NSString+HLToolkit.h */,
+				D9080A132178F45F00246DE2 /* NSString+HLToolkit.m */,
+				D9080A1F2178FB4A00246DE2 /* NSObject+HLToolkit.h */,
+				D9080A202178FB4A00246DE2 /* NSObject+HLToolkit.m */,
+				D9080A242178FBD300246DE2 /* NSThread+HLToolkit.h */,
+				D9080A252178FBD300246DE2 /* NSThread+HLToolkit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1084,6 +1126,8 @@
 		D3C3D2AB2F588C067C34D1879F995633 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				D9080A1A2178F6F400246DE2 /* Log */,
+				D9080A092178E97400246DE2 /* Cryptor */,
 				1AB203ACE3C65239A052FF4D74F51D41 /* Convert */,
 				2EE46BFA14CF5D36BB1CC3CD6AAB7A4C /* JSONValue */,
 				8069CD9610B2D6215CC35C41CBE1A91C /* URLEncoding */,
@@ -1091,6 +1135,26 @@
 			);
 			name = Function;
 			path = HLToolkit/Classes/Function;
+			sourceTree = "<group>";
+		};
+		D9080A092178E97400246DE2 /* Cryptor */ = {
+			isa = PBXGroup;
+			children = (
+				D9080A0A2178E9B000246DE2 /* NSString+HLTKCryptor.h */,
+				D9080A0B2178E9B000246DE2 /* NSString+HLTKCryptor.m */,
+				D9080A0E2178F23300246DE2 /* NSData+HLTKCryptor.h */,
+				D9080A0F2178F23300246DE2 /* NSData+HLTKCryptor.m */,
+			);
+			path = Cryptor;
+			sourceTree = "<group>";
+		};
+		D9080A1A2178F6F400246DE2 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				D9080A1B2178F70400246DE2 /* HLLog.h */,
+				D9080A1C2178F70400246DE2 /* HLLog.m */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1101,11 +1165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				828E0E8947DBAF4F117F30BED1E103AC /* HLBaseView.h in Headers */,
+				D9080A1D2178F70400246DE2 /* HLLog.h in Headers */,
+				D9080A262178FBD300246DE2 /* NSThread+HLToolkit.h in Headers */,
 				F91A203D3FD56B814638211268E039F5 /* HLBaseViewController.h in Headers */,
 				7E436C0969EFEEBFC167CB04CFD76468 /* HLTKURLEncoding.h in Headers */,
 				F1707F6AFA041D65468DA99D03B79EA6 /* HLToolkit-umbrella.h in Headers */,
 				66B2ACAF214276D600263F93 /* NSFileManager+NotBackupNotPurged.h in Headers */,
 				91CFBE62EEC68C2B6AC659FE6D0130D2 /* HLToolKit.h in Headers */,
+				D9080A0C2178E9B000246DE2 /* NSString+HLTKCryptor.h in Headers */,
 				66B2ACB4214283B000263F93 /* HLKTJSONValue.h in Headers */,
 				66B2ACB12142839000263F93 /* HLTKCategoryUIKit.h in Headers */,
 				28460051DD9B823C9583198935BEF2C2 /* NSData+convert.h in Headers */,
@@ -1118,9 +1185,12 @@
 				D3FEBE213BEE5D4B552875803BF1E507 /* NSMutableArray+HLToolkit.h in Headers */,
 				CB64C5E3F132A633BBF6128CDEC3752C /* NSMutableDictionary+HLToolkit.h in Headers */,
 				66B2ACB22142839400263F93 /* HLTKCategoryFoundation.h in Headers */,
+				D9080A142178F45F00246DE2 /* NSString+HLToolkit.h in Headers */,
 				66B2ACB6214283C800263F93 /* HLTKBase.h in Headers */,
 				66B2ACA421426D7900263F93 /* HLTKCategory.h in Headers */,
+				D9080A212178FB4A00246DE2 /* NSObject+HLToolkit.h in Headers */,
 				9A94335ED7B566B5C876E3BE850E01C8 /* NSString+URLEncoding.h in Headers */,
+				D9080A072178DED300246DE2 /* NSUserDefaults+HLToolkit.h in Headers */,
 				14649D9B9ACD30678D806374F529F3DD /* SynthesizeSingleton.h in Headers */,
 				151F4753C6F53F90B746C17B009137E9 /* UIApplication+HLToolkit.h in Headers */,
 				66B2ACB8214283D400263F93 /* HLTKMacors.h in Headers */,
@@ -1128,10 +1198,12 @@
 				05C0D6FD5ADDAFBD6B66D4DBA2225833 /* UIDevice+HLToolkit.h in Headers */,
 				669B12EE215F4EB600887FF8 /* UIWindow+HLToolkit.h in Headers */,
 				B180FF79C60E0B53E86868BF9FD2B4BF /* UIImage+HLToolkit.h in Headers */,
+				D9080A102178F23300246DE2 /* NSData+HLTKCryptor.h in Headers */,
 				66C4BD0B21534CAA00A62C58 /* UIButton+HLToolkit.h in Headers */,
 				738440420204FBF1C8D4F8AB90A0192D /* UIScrollView+HLToolkit.h in Headers */,
 				955AF8CFD78862AFDFDCFC96AD7223DD /* UIView+CornerRadius.h in Headers */,
 				66B2ACB7214283CF00263F93 /* HLTKInspectableDesignable.h in Headers */,
+				D9080A182178F57C00246DE2 /* NSString+convert.h in Headers */,
 				6F4B1A2280B684C841DEFD7D7D3D092A /* UIView+HLToolkit.h in Headers */,
 				4F28134623E07E2F5E0BBCFB9AFFAD16 /* UIViewController+HLToolkit.h in Headers */,
 				66B2ACB5214283B800263F93 /* HLTKFunction.h in Headers */,
@@ -1478,19 +1550,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9080A152178F45F00246DE2 /* NSString+HLToolkit.m in Sources */,
+				D9080A192178F57C00246DE2 /* NSString+convert.m in Sources */,
 				3CD85FFFEE31B3483680CAB22FE85B73 /* HLBaseView.m in Sources */,
 				DB7F1C1430EE5BB67A84E5C9B12E9F54 /* HLBaseViewController.m in Sources */,
 				669B12EF215F4EB600887FF8 /* UIWindow+HLToolkit.m in Sources */,
 				32D6FCF16657BEC12451D3F49DDCA8F8 /* HLToolkit-dummy.m in Sources */,
+				D9080A0D2178E9B000246DE2 /* NSString+HLTKCryptor.m in Sources */,
+				D9080A222178FB4A00246DE2 /* NSObject+HLToolkit.m in Sources */,
 				EF40838FDCF9D082CC49E072A43C0009 /* HLToolKit.m in Sources */,
 				F62005EB6F9E0E52C16AF14609DDCDBD /* NSData+convert.m in Sources */,
 				E967EE9CAEFE2E64023848406FCAF512 /* NSDate+HLToolkit.m in Sources */,
 				1EFEDCA087C5CBDA340DB5B7654A636C /* NSDictionary+convert.m in Sources */,
 				66C4BD0C21534CAA00A62C58 /* UIButton+HLToolkit.m in Sources */,
+				D9080A272178FBD300246DE2 /* NSThread+HLToolkit.m in Sources */,
+				D9080A112178F23300246DE2 /* NSData+HLTKCryptor.m in Sources */,
 				4364DDCD1A0F9CE34CE0BA09F09BA792 /* NSDictionary+HLToolkit.m in Sources */,
 				D403F23E165F18440C3F60E6A5F6ECDC /* NSDictionary+JSONValue.m in Sources */,
+				D9080A082178DED300246DE2 /* NSUserDefaults+HLToolkit.m in Sources */,
 				6BEBCB23D36F040936BCCA321C279937 /* NSDictionary+URLEncoding.m in Sources */,
 				31C16971626CB4761D80AE3E62242574 /* NSMutableArray+HLToolkit.m in Sources */,
+				D9080A1E2178F70400246DE2 /* HLLog.m in Sources */,
 				2FA64F99C412A32E0798D05FD49DF718 /* NSMutableDictionary+HLToolkit.m in Sources */,
 				61ECCAA00FF2F3913DB41576B4F06849 /* NSString+URLEncoding.m in Sources */,
 				0EF6DBF0C05FC12B295A16FEEF5E2E90 /* UIApplication+HLToolkit.m in Sources */,

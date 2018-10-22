@@ -11,3 +11,7 @@
 #import "NSMutableArray+HLToolkit.h"
 #import "NSMutableDictionary+HLToolkit.h"
 #import "NSFileManager+NotBackupNotPurged.h"
+#import "NSUserDefaults+HLToolkit.h"
+#import "NSString+HLToolkit.h"
+#import "NSObject+HLToolkit.h"
+#import "NSThread+HLToolkit.h"

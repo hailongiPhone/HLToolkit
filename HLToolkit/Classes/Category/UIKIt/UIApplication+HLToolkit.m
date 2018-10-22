@@ -7,6 +7,7 @@
 //
 
 #import "UIApplication+HLToolkit.h"
+#import "NSUserDefaults+HLToolkit.h"
 
 @implementation UIApplication (HLToolkit)
 + (NSString *)applicationName
@@ -77,5 +78,17 @@
 + (BOOL)isBackground;
 {
     return [UIApplication sharedApplication].applicationState == UIApplicationStateBackground;
+}
+
+#pragma mark -
++ (void)launchCount:(void (^)(NSInteger totalCount,NSInteger currentVersionCount)) handler;
+{
+    NSString * totalKey = @"HLTKUIAPP+TotalCount";
+    NSInteger totoal = [NSUserDefaults incrementIntegerForKey:totalKey];
+    NSString * currentKey = [@"HLTKUIAPP+" stringByAppendingString:[self applicationVersion]];
+    NSInteger current = [NSUserDefaults incrementIntegerForKey:currentKey];
+    if (handler) {
+        handler(totoal,current)
+    }
 }
 @end
