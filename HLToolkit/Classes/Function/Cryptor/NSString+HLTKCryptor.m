@@ -119,7 +119,7 @@
 #pragma mark -
 - (NSString * )encodeToBase64;
 {
-    NSData *data = [string data];
+    NSData *data = [self data];
     return [data base64EncodedStringWithOptions:0];
 }
 

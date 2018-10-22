@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param file         File
  *  @param lineNumber   Line number
- *  @param functionName Function name
+ *  @param function     function name
  *  @param format       Format
  */
 void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnull function, NSString * _Nonnull format, ...);

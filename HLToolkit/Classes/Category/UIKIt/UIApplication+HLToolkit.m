@@ -88,7 +88,7 @@
     NSString * currentKey = [@"HLTKUIAPP+" stringByAppendingString:[self applicationVersion]];
     NSInteger current = [NSUserDefaults incrementIntegerForKey:currentKey];
     if (handler) {
-        handler(totoal,current)
+        handler(totoal,current);
     }
 }
 @end
