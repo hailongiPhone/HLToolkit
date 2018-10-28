@@ -109,7 +109,7 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
 
 
 
-+ (void)swizzleClassMethod:(SEL)origSelector withMethod:(SEL)newSelector
+- (void)swizzleClassMethod:(SEL)origSelector withMethod:(SEL)newSelector
 {
     swizzleClassMethod(self.class, origSelector, newSelector);
 }
@@ -120,7 +120,7 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
 }
 
 
-+ (void)dumpClassMethods;
+- (void)dumpClassMethods;
 {
     printf(" %s  classMethods\n  ",class_getName(object_getClass(self)));
     unsigned int classcount;
@@ -134,7 +134,7 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
     
 }
 
-+ (void)dumpInstanceMethods;
+- (void)dumpInstanceMethods;
 {
     
     printf(" %s  instanceMethods\n  ",class_getName(object_getClass(self)));
@@ -149,7 +149,7 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
     free(methods);
 }
 
-+ (void)dumpPropertys;
+- (void)dumpPropertys;
 {
     
     printf(" %s  propertys\n  ",class_getName(object_getClass(self)));
@@ -165,7 +165,7 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
     free(propertys);
 }
 
-+ (void)dumpAll;
+- (void)dumpAll;
 {
     [self dumpClassMethods];
     [self dumpInstanceMethods];

@@ -22,13 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
                    withObjects:(id _Nullable)object, ... NS_REQUIRES_NIL_TERMINATION;
 
 
-+ (void)swizzleClassMethod:(SEL)origSelector withMethod:(SEL)newSelector;
+- (void)swizzleClassMethod:(SEL)origSelector withMethod:(SEL)newSelector;
 - (void)swizzleInstanceMethod:(SEL)origSelector withMethod:(SEL)newSelector;
 
-+ (void)dumpClassMethods;
-+ (void)dumpInstanceMethods;
-+ (void)dumpPropertys;
-+ (void)dumpAll;
+- (void)dumpClassMethods;
+- (void)dumpInstanceMethods;
+- (void)dumpPropertys;
+- (void)dumpAll;
 
 @end
 
