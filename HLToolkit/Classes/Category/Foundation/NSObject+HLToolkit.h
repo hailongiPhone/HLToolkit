@@ -20,6 +20,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (id _Nonnull)performSelector:(SEL _Nonnull)aSelector
                    withObjects:(id _Nullable)object, ... NS_REQUIRES_NIL_TERMINATION;
+
+
++ (void)swizzleClassMethod:(SEL)origSelector withMethod:(SEL)newSelector;
+- (void)swizzleInstanceMethod:(SEL)origSelector withMethod:(SEL)newSelector;
+
++ (void)dumpClassMethods;
++ (void)dumpInstanceMethods;
++ (void)dumpPropertys;
++ (void)dumpAll;
+
 @end
 
 NS_ASSUME_NONNULL_END
